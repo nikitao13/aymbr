@@ -1,0 +1,95 @@
+* {
+  user-select: none;
+  cursor: url('./assets/cursor.cur'), auto;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #121212;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #121212;
+}
+
+#console {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0 0;
+  #hh1 {
+    font-size: 3rem;
+    transition: opacity 1s ease-in;
+    color: white;
+  }
+  header {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #game-view {
+    width: 1200px;
+    height: 800px;
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    padding: 3rem;
+  }
+  #startScore {
+    display: flex;
+    transition: opacity 1s ease-in;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    p {
+      transition: color ease-in-out 1s;
+      color: white;
+      margin: 0;
+    }
+  }
+  #start {
+    &:hover {
+      scale: 113%;
+      color: green;
+      transition: scale 0.5s ease-in-out;
+    }
+  }
+  #mode {
+    &:hover {
+      transition: opacity 0.5s ease-in-out;
+      opacity: 65%;
+    }
+  }
+}
+
+.target {
+  background-color: #121212;
+}
+
+/* laptop */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #console {
+    margin-top: 0.7rem;
+    #hh1 {
+      font-size: 1.7rem;
+      margin: 0;
+      }
+    #game-view {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      }
+    }
+  }
