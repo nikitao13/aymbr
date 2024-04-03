@@ -1,8 +1,13 @@
-# React + Vite
+# aymbr aim trainer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+an aim training game built to help improve user reaction time & unlock their potential in FPS games where every ms counts.
 
-Currently, two official plugins are available:
+## upcoming features
+- leaderboard
+- accuracy stats
+- fine-tuned mode
+- custom colors
+- new crosshairs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## how to play:
+as the red targets appear, click them with your mouse cursor. after a succesful 'hit', the target will dissappear. targets appear at set intervals and hitting a target quickly will give you more time to re-center and prepare for the next one.
